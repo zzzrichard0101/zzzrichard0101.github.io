@@ -1,0 +1,184 @@
+[
+  {
+    "file": "fracture-sequence.webp",
+    "source": "Group 23 (2)-20353.jpg",
+    "originalSize": [
+      7722,
+      5401
+    ],
+    "outputSize": [
+      2574,
+      1800
+    ],
+    "processing": "EXIF orientation, proportionate resize, WebP encoding. No crop."
+  },
+  {
+    "file": "fracture-surfaces.webp",
+    "source": "Group 33 (3)-21240.jpg",
+    "originalSize": [
+      12300,
+      2323
+    ],
+    "outputSize": [
+      2600,
+      491
+    ],
+    "processing": "EXIF orientation, proportionate resize, WebP encoding. No crop."
+  },
+  {
+    "file": "interior-materials.webp",
+    "source": "Group 34 (3)-21250.jpg",
+    "originalSize": [
+      6051,
+      3414
+    ],
+    "outputSize": [
+      2600,
+      1467
+    ],
+    "processing": "EXIF orientation, proportionate resize, WebP encoding. No crop."
+  },
+  {
+    "file": "fracture-frames.webp",
+    "source": "Group 36 (2)-21212.jpg",
+    "originalSize": [
+      10145,
+      5748
+    ],
+    "outputSize": [
+      2600,
+      1473
+    ],
+    "processing": "EXIF orientation, proportionate resize, WebP encoding. No crop."
+  },
+  {
+    "file": "stone-guide.webp",
+    "source": "Group 12 (1)-20906.png",
+    "originalSize": [
+      14191,
+      3584
+    ],
+    "outputSize": [
+      2600,
+      657
+    ],
+    "processing": "EXIF orientation, proportionate resize, WebP encoding. No crop."
+  },
+  {
+    "file": "glass-guide.webp",
+    "source": "Group 13-20984.png",
+    "originalSize": [
+      8355,
+      3584
+    ],
+    "outputSize": [
+      2600,
+      1115
+    ],
+    "processing": "EXIF orientation, proportionate resize, WebP encoding. No crop."
+  },
+  {
+    "file": "wood-guide.webp",
+    "source": "Group 14-20989.png",
+    "originalSize": [
+      11282,
+      3584
+    ],
+    "outputSize": [
+      2600,
+      826
+    ],
+    "processing": "EXIF orientation, proportionate resize, WebP encoding. No crop."
+  },
+  {
+    "file": "motion-transfer.webp",
+    "source": "Group 15 (1)-21001.png",
+    "originalSize": [
+      11269,
+      3257
+    ],
+    "outputSize": [
+      2600,
+      751
+    ],
+    "processing": "EXIF orientation, proportionate resize, WebP encoding. No crop."
+  },
+  {
+    "file": "interior-before.webp",
+    "source": "Screenshot 2026-06-11 at 1.06.43ΓÇ»PM-20407.png",
+    "originalSize": [
+      1000,
+      992
+    ],
+    "outputSize": [
+      1000,
+      992
+    ],
+    "processing": "EXIF orientation, proportionate resize, WebP encoding. No crop."
+  },
+  {
+    "file": "interior-after.webp",
+    "source": "Screenshot 2026-06-11 at 1.07.55ΓÇ»PM-20420.png",
+    "originalSize": [
+      1140,
+      1128
+    ],
+    "outputSize": [
+      1140,
+      1128
+    ],
+    "processing": "EXIF orientation, proportionate resize, WebP encoding. No crop."
+  },
+  {
+    "file": "pbd-collision.webp",
+    "source": "Scene_b-19159.jpg",
+    "originalSize": [
+      2640,
+      1388
+    ],
+    "outputSize": [
+      2600,
+      1367
+    ],
+    "processing": "EXIF orientation, proportionate resize, WebP encoding. No crop."
+  },
+  {
+    "file": "pbd-pipeline.webp",
+    "source": "Group 1 (1)-19304.png",
+    "originalSize": [
+      14451,
+      4486
+    ],
+    "outputSize": [
+      2600,
+      807
+    ],
+    "processing": "EXIF orientation, proportionate resize, WebP encoding. No crop."
+  },
+  {
+    "file": "vr-paper.webp",
+    "source": "Screenshot 2026-06-10 at 9.46.13ΓÇ»AM-18775.png",
+    "originalSize": [
+      3456,
+      1948
+    ],
+    "outputSize": [
+      2600,
+      1466
+    ],
+    "processing": "EXIF orientation, proportionate resize, WebP encoding. No crop."
+  },
+  {
+    "file": "vr-cloth.webp",
+    "source": "Screenshot 2026-06-10 at 9.47.38ΓÇ»AM-18778.png",
+    "originalSize": [
+      3456,
+      1948
+    ],
+    "outputSize": [
+      2600,
+      1466
+    ],
+    "processing": "EXIF orientation, proportionate resize, WebP encoding. No crop."
+  }
+]

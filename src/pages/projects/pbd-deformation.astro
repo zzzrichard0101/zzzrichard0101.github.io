@@ -1,0 +1,12 @@
+---
+import CaseLayout from '../../layouts/CaseLayout.astro';
+import Figure from '../../components/Figure.astro';
+const meta=[{label:'CONTEXT',value:'별도 PBD 연구 · 디지털콘텐츠학회논문지, 2026.01'},{label:'FOCUS',value:'프록시 기반 시뮬레이션 · 국소 변형 전달'},{label:'TOOLS',value:'3DGS · Houdini Vellum · Point Deform'}];
+const toc=[{id:'question',label:'연구 질문'},{id:'method',label:'구현 방법'},{id:'observations',label:'결과'},{id:'publication',label:'논문 정보'}];
+---
+<CaseLayout index={1} summary="고밀도 Gaussian의 외관 표현과 프록시 메시의 물리 시뮬레이션을 연결했습니다. Vellum PBD로 계산한 변형을 3DGS에 전달해 중력과 충돌에 반응하는 유연한 움직임을 구현한 별도 연구입니다." meta={meta} toc={toc}>
+  <section id="question"><h2><small>01</small>외관과 물리 계산을 연결하기</h2><p>촬영한 물체를 재구성한 뒤, 물리 계산을 위한 저해상도 프록시 메시를 생성합니다. 계산은 프록시에서 수행하고, 결과 변형은 원본 해상도의 Gaussian에 전달합니다. 표현 해상도와 물리 계산 해상도를 분리해 두 단계가 하나의 제작 흐름으로 이어지도록 설계했습니다.</p></section>
+  <section id="method"><h2><small>02</small>프록시에서 계산하고, Gaussian으로 표현</h2><div class="pipeline"><div><h3>3DGS 재구성</h3><p>다중 시점 이미지와 COLMAP으로 장면을 준비하고 Gaussian 표현을 학습합니다.</p></div><div><h3>프록시 메시 생성</h3><p>SDF / VDB 기반으로 물리 시뮬레이션에 사용할 메시를 구성합니다.</p></div><div><h3>Vellum PBD 시뮬레이션</h3><p>프록시 메시의 제약 조건을 설정해 중력과 충돌에 따른 변형을 계산합니다.</p></div><div><h3>Point Deform과 렌더링</h3><p>프록시의 변형을 Gaussian에 전달하고, 변형된 장면을 렌더링합니다.</p></div></div><Figure image="pbd-pipeline.webp" alt="가방 입력 이미지와 COLMAP, 3DGS 학습, Vellum 시뮬레이션, 변형 전달 및 렌더링 파이프라인" caption="재구성 → 프록시 메시 → Vellum PBD → Point Deform → 렌더링." tone="light" /></section>
+  <section id="observations"><h2><small>03</small>충돌이 만드는 국소적인 반응</h2><p>가방 장면에 구체가 충돌하는 실험에서, 프록시 메시의 변형을 Gaussian에 전달하는 과정을 확인했습니다. 부위별 제약을 통해 변형 범위와 반응을 조정하는 방식에 초점을 두었습니다.</p><Figure image="pbd-collision.webp" alt="세 시점에서 구체와 가방의 충돌 및 국소 변형을 보여주는 연구 결과" caption="충돌에 반응하는 가방의 국소 변형 결과." /><div class="contribution-list"><h3>설계와 구현의 핵심</h3><ul><li>외관 재구성과 물리 시뮬레이션을 프록시 메시를 통해 연결</li><li>PBD 제약 조건을 이용한 부위별 변형 제어</li><li>변형 전달에서 최종 Gaussian 렌더링까지 일관된 제작 흐름 구성</li></ul></div></section>
+  <section id="publication"><h2><small>04</small>논문 정보</h2><div class="publication-card"><span class="publication-date">JOURNAL ARTICLE · 2026.01</span><h3>3차원 가우시안 스플레팅의 동적 변형 및 시각화를 위한 PBD 통합 파이프라인 연구</h3><p>김경중 · 유태경<br />디지털콘텐츠학회논문지 27(1), 207–214</p><a class="text-link" href="https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART003299455" target="_blank" rel="noopener noreferrer">KCI 논문 정보 <span>↗</span></a></div></section>
+</CaseLayout>

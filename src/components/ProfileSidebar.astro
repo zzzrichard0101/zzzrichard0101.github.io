@@ -1,0 +1,22 @@
+---
+import { profile, asset } from '../data/portfolio';
+const home = asset('');
+---
+<aside class="profile-sidebar" aria-label="프로필">
+  <div class="profile-mark" role="img" aria-label="김경중 개인 모노그램"><span class="mark-orbit"></span><b>k<span>·</span></b><small>GRAPHICS / PHYSICS</small></div>
+  <h2>{profile.name}</h2>
+  <p class="profile-english-name">{profile.englishName}</p>
+  <p class="profile-role">Graphics Researcher<br />& Technical Artist</p>
+  <p class="profile-description">3D Gaussian Splatting,<br />physics simulation, and VR.</p>
+  <dl class="profile-details">
+    <div><dt>Research</dt><dd>3DGS · Physics Simulation</dd></div>
+    <div><dt>Education</dt><dd>중앙대학교 영상학 석사<br />엔터테인먼트 테크놀로지</dd></div>
+    <div><dt>Lab</dt><dd>Virtual Interaction LAB</dd></div>
+    <div><dt>Practice</dt><dd>Technical Art · Immersive Media</dd></div>
+  </dl>
+  <div class="profile-links">
+    {profile.email && <a href={`mailto:${profile.email}`}>Email <span>↗</span><small>{profile.email}</small></a>}
+    {profile.github && <a href={profile.github} target="_blank" rel="noopener noreferrer">GitHub <span>↗</span></a>}
+    <a href={`${home}#cv-archive`}>Experience & Education <span>↓</span></a>
+  </div>
+</aside>

@@ -1,0 +1,27 @@
+---
+import Layout from './Layout.astro';
+import Figure from '../components/Figure.astro';
+import { profile, projects, asset } from '../data/portfolio';
+interface Props { index: number; summary: string; meta: { label: string; value: string }[]; toc: {id: string; label: string}[]; }
+const { index, summary, meta, toc } = Astro.props;
+const project = projects[index];
+const next = projects[(index + 1) % projects.length];
+---
+<Layout title={`${project.title} — ${profile.name}`} description={summary}>
+  <div class="wrap">
+    <div class="case-header"><a class="back-link" href={`${asset('')}#work`}>← <span>ALL WORK</span></a></div>
+    <header class="case-title">
+      <p class="eyebrow">{project.number} / {project.type}</p>
+      <h1>{project.title}</h1>
+      <p class="case-subtitle">{project.englishTitle}</p>
+      <p class="case-description">{summary}</p>
+      <dl class="case-meta">{meta.map(item => <div><dt>{item.label}</dt><dd>{item.value}</dd></div>)}</dl>
+    </header>
+    <div class="case-lead-image"><Figure image={project.image} alt={project.alt} eager={true} /></div>
+    <div class="case-layout">
+      <nav class="case-toc" aria-label="프로젝트 목차"><span>IN THIS PROJECT</span>{toc.map((section, i) => <a href={`#${section.id}`}>0{i+1} / {section.label}</a>)}</nav>
+      <div class="case-content"><slot /></div>
+    </div>
+    <a class="case-next" href={asset(`projects/${next.slug}/`)}><div><p class="eyebrow">NEXT PROJECT / {next.number}</p><h3>{next.title}</h3></div><span class="round-arrow" aria-hidden="true">↗</span></a>
+  </div>
+</Layout>

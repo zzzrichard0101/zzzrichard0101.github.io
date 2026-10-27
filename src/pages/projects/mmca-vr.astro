@@ -1,0 +1,11 @@
+---
+import CaseLayout from '../../layouts/CaseLayout.astro';
+import Figure from '../../components/Figure.astro';
+const meta=[{label:'EXHIBITION',value:'국립현대미술관 《순간이동》 · 2024.10.18—2025.02.16'},{label:'ROLE',value:'Technical Artist · 물리 시뮬레이션 및 최적화'},{label:'PROJECT',value:'유태경 〈시네마틱 스크리닝〉 · Unreal Engine VR'}];
+const toc=[{id:'context',label:'프로젝트 맥락'},{id:'contribution',label:'참여 역할'},{id:'production',label:'구현 과정'}];
+---
+<CaseLayout index={2} summary="국립현대미술관 《순간이동》 전시의 VR 프로젝트에 참여했습니다. 종이와 천의 물리 요소를 구현·조정하고, 실시간 VR 환경의 리소스를 최적화하며 시뮬레이션을 관객의 경험으로 연결했습니다." meta={meta} toc={toc}>
+  <section id="context"><h2><small>01</small>관객이 머무는 가상 공간</h2><p>유태경의 〈시네마틱 스크리닝〉은 옛 단성사의 공간을 디지털 환경으로 재현하고, 관객이 역사적 공간과 영상 콘텐츠를 경험하도록 구성한 프로젝트입니다. Unreal Engine 기반 가상공간에서 물리 시뮬레이션·렌더링·인터랙션이 함께 작동하는 전시 환경을 제작했습니다.</p></section>
+  <section id="contribution"><h2><small>02</small>참여 역할과 기여</h2><div class="pipeline"><div><h3>Paper Simulation</h3><p>Houdini로 종이의 물리 시뮬레이션을 구현하고, 장면 속 움직임에 맞춰 물리 파라미터를 조정했습니다.</p></div><div><h3>Cloth Simulation</h3><p>Houdini의 천 시뮬레이션을 장면에 맞춰 조정하고, 실시간 콘텐츠에 사용할 수 있도록 결과를 연동했습니다.</p></div><div><h3>Runtime Optimization</h3><p>제한된 하드웨어에서 실행할 수 있도록 물리 효과의 복잡도와 리소스 사용량을 검토하고 에셋을 최적화했습니다.</p></div><div><h3>Integration</h3><p>Unreal Engine 에셋 구성, 시뮬레이션 연결, 렌더링·인터랙션 연동 과정에 참여해 최종 콘텐츠의 동작을 확인했습니다.</p></div></div></section>
+  <section id="production"><h2><small>03</small>움직임과 실행 환경을 함께 조정</h2><p>전시용 VR에서는 물리 효과의 외관과 실행 비용을 함께 고려했습니다. 종이와 천의 파라미터를 조정하고, 시뮬레이션 결과를 Unreal Engine 콘텐츠에 적합한 형태로 정리했습니다. 에셋 구성부터 렌더링·인터랙션까지 이어지는 과정에서 담당 요소가 최종 관람 환경에서 동작하도록 확인했습니다.</p><Figure image="vr-paper.webp" alt="전봇대에 부착된 종이 포스터와 석양이 보이는 VR 장면" caption="PAPER SIMULATION / 장면 속 종이의 물리 요소 구현 및 동작 조정." /><Figure image="vr-cloth.webp" alt="커튼과 조명이 있는 어두운 실내 VR 장면" caption="CLOTH SIMULATION / 공간의 연출에 맞춘 천의 동작 조정." /><p>물리 기반 표현을 실시간 엔진에 연결하고, 실제 관람 환경을 고려해 구현과 최적화를 수행한 프로젝트입니다.</p><p class="metric-caption" style="margin-top:24px">작품: 유태경 〈시네마틱 스크리닝〉 · 물리 시뮬레이션 및 최적화 참여: 김경중.</p></section>
+</CaseLayout>

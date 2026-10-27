@@ -1,0 +1,12 @@
+---
+import { asset } from '../data/portfolio';
+interface Props { image: string; alt: string; caption?: string; tone?: string; eager?: boolean; }
+const { image, alt, caption, tone = '', eager = false } = Astro.props;
+---
+<figure class:list={['research-figure', tone]}>
+  <button class="image-expand" data-enlarge aria-label={`${alt} — 확대 보기`}>
+    <img src={asset(`images/${image}`)} alt={alt} loading={eager ? 'eager' : 'lazy'} decoding="async" />
+    <span class="expand-icon" aria-hidden="true">↗</span>
+  </button>
+  {caption && <figcaption>{caption}</figcaption>}
+</figure>
