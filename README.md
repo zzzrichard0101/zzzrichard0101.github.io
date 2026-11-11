@@ -1,6 +1,8 @@
 # 김경중 · Research Portfolio
 
-Astro 기반 정적 연구 포트폴리오입니다. 메인 페이지, 3개 프로젝트 상세 페이지, 404 페이지를 포함합니다. 서버나 데이터베이스 없이 GitHub Pages에서 작동합니다.
+Astro 기반 정적 연구 포트폴리오입니다. 메인 페이지, 4개 프로젝트 상세 페이지, 404 페이지를 포함합니다. 서버나 데이터베이스 없이 GitHub Pages에서 작동합니다.
+
+Unreal VLA 개인 프로젝트는 `src/pages/projects/unreal-vla.astro`에 있습니다. 기본·Courtyard·Night의 실제 v12 실행 화면, 평가 조건을 명시한 v10 성능, 일반화 실험과 모델 선택 근거를 담았습니다. 이미지 출처는 `public/images/unreal-vla-provenance.json`, 원본 PNG의 WebP 변환 도구는 `scripts/prepare-vla-images.py`에 기록했습니다.
 
 현재 버전은 참고 사이트와 같은 **좌측 프로필 + 우측 본문** 구조입니다. 본문 순서는 소개 → Selected Work → Writing & Research → Teaching → Experience & Education → Latest News입니다. 상세 페이지에도 프로필 사이드바가 유지되고, 모바일에서는 본문을 한 열로 표시합니다.
 

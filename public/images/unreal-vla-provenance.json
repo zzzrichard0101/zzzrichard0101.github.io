@@ -1,0 +1,38 @@
+[
+  {
+    "file": "unreal-vla-standard.webp",
+    "source": "Unreal Engine FScreenshotRequest, actual local v12 inference",
+    "environment": "standard",
+    "model": "rgb-language-v12-domain-augmentation",
+    "size": [
+      1600,
+      900
+    ],
+    "sourceSha256": "67b33a82470efea035478f3d05f2c8c91d7e675f70acf244533bf15519137a8d",
+    "processing": "WebP compression; no crop, overlays, or generated content"
+  },
+  {
+    "file": "unreal-vla-courtyard.webp",
+    "source": "Unreal Engine FScreenshotRequest, actual local v12 inference",
+    "environment": "courtyard",
+    "model": "rgb-language-v12-domain-augmentation",
+    "size": [
+      1600,
+      900
+    ],
+    "sourceSha256": "c82afbb0749c678aaa66cf3fc0017f8c23295d2a645cd9985f30840b30a2ad7e",
+    "processing": "WebP compression; no crop, overlays, or generated content"
+  },
+  {
+    "file": "unreal-vla-night.webp",
+    "source": "Unreal Engine FScreenshotRequest, actual local v12 inference",
+    "environment": "night",
+    "model": "rgb-language-v12-domain-augmentation",
+    "size": [
+      1600,
+      900
+    ],
+    "sourceSha256": "5c19cc4719b0ba74d0752c706c351d80d745b7fb924e399fe845ebd9f77ea6cd",
+    "processing": "WebP compression; no crop, overlays, or generated content"
+  }
+]
