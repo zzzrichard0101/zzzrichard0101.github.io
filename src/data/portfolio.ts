@@ -44,6 +44,15 @@ export const projects = [
     alt: 'Unreal VLA 기본 환경에서 초록 목표를 향해 이동하는 캐릭터와 실시간 모델 상태 패널',
     tags: ['Unreal Engine 5.8', 'PyTorch', 'Behavior Cloning', 'WebSocket'],
   },
+  {
+    slug: 'forgebench', number: '05', category: 'ai',
+    type: 'PERSONAL PROJECT · 2026', title: '코딩 에이전트의 완료를 검증하는 ForgeBench',
+    englishTitle: 'Coding Agent Harness & Verification Benchmark',
+    description: '격리 실행부터 검증 정책 비교와 비공개 평가까지 연결한 실험 플랫폼. 완료 오판과 복구 실패를 분석하고, 평가셋 구성 조건을 검증한 개인 프로젝트.',
+    image: 'forgebench-pipeline.svg',
+    alt: '과제 고정, 격리된 에이전트 실행, 동일 결과물의 정책 비교, 외부 비공개 채점을 연결한 ForgeBench 구조도',
+    tags: ['Python', 'Codex CLI', 'Agent Evaluation', 'Reproducibility'],
+  },
 ] as const;
 
 export const asset = (path: string) => `${import.meta.env.BASE_URL.replace(/\/$/, '')}/${path.replace(/^\//, '')}`;
@@ -56,7 +65,6 @@ export const publications = [
 ] as const;
 
 export const additionalWork = [
-  { id: 'forgebench', label: 'AGENT EVALUATION', title: 'ForgeBench — 코딩 에이전트 검증 실험 플랫폼', role: '플랫폼 기획 · 검증 정책 설계 · 실패 분석', description: '에이전트의 완료 보고와 실제 요구사항 충족 여부를 비교하고, 검증 정책에 따른 오류 탐지와 복구 과정을 분석하는 실험 환경을 만들었습니다.', contributions: ['격리 작업 공간, 도구 실행, 계획 수립, 완료 조건 검사와 장애 복구 기능을 Python으로 구성했습니다.', '에이전트 작업 공간과 비공개 채점기를 분리하고, 산출물과 평가 결과를 해시로 연결해 실험을 재현할 수 있도록 했습니다.', '토큰·시간·성공 여부를 함께 기록하고, 완료 오판·보호 파일 변경 등 실패 유형을 분석했습니다. 오류를 찾아내는 과정과 실제로 수정하는 과정을 나눠 평가했습니다.'], tags: ['Python', 'Agent Evaluation', 'Regression Tests', 'Reproducibility'] },
   { id: 'film-capstone', label: '2023.09 — 2024.07', title: '3D 재구성을 활용한 단편영화 제작', role: 'Technical Director · 중앙대학교 졸업 프로젝트', description: '약 1분 분량의 단편영화 5편을 제작하는 프로젝트에서 NeRF와 Gaussian Splatting의 제작 적용 가능성을 검토했습니다.', contributions: ['실제 공간을 3D로 재구성해 영화 배경 제작에 적용했습니다.', '기술별 테스트와 R&D를 수행하고, 촬영·후반제작 조건에 맞는 활용 방식과 제작 워크플로우를 정리했습니다.'], tags: ['NeRF', '3DGS', 'Technical Direction', 'R&D'] },
   { id: 'virtual-production', label: '2023.05 — 2023.12', title: 'Virtual Production & Virtual Scouting', role: '실시간 촬영 시스템 및 사전 검토 환경 구축', description: 'Aximmetry, Unreal Engine, Vive Mars를 연동해 카메라 트래킹과 가상 배경이 연결되는 실시간 촬영 시스템을 구축했습니다.', contributions: ['촬영에 사용할 수 있도록 장비 간 연동과 VP 워크플로우를 설계·조정했습니다.', 'Unreal Engine과 Rokoko 모션캡처로 카메라 동선·장면 구성·공간 배치를 촬영 전에 검토하는 Virtual Scouting 환경을 구성했습니다.'], tags: ['Aximmetry', 'Unreal Engine', 'Vive Mars', 'Rokoko'] },
   { id: 'heritage-showcase', label: '2019.10 — 2020.01', title: '기사진표리진찬의궤 디지털 쇼케이스', role: 'Motion Graphic & Content Design', description: 'LG디스플레이·British Library·중앙대학교 협업 프로젝트에서 문화유산 자료를 디지털 전시 콘텐츠로 재구성하는 작업에 참여했습니다.', contributions: ['원자료와 전시 환경을 분석하고, 모션그래픽 및 영상 콘텐츠를 제작했습니다.', '투명 디스플레이의 특성을 고려해 콘텐츠의 시각 정보 구조를 설계했습니다. 관련 공동연구는 영상 미디어 개발과 사용자 경험 평가로 이어졌습니다.'], tags: ['Motion Graphics', 'Transparent Display', 'Cultural Heritage'] },

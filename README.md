@@ -1,6 +1,8 @@
 # 김경중 · Research Portfolio
 
-Astro 기반 정적 연구 포트폴리오입니다. 메인 페이지, 4개 프로젝트 상세 페이지, 404 페이지를 포함합니다. 서버나 데이터베이스 없이 GitHub Pages에서 작동합니다.
+Astro 기반 정적 연구 포트폴리오입니다. 메인 페이지, 5개 프로젝트 상세 페이지, 404 페이지를 포함합니다. 서버나 데이터베이스 없이 GitHub Pages에서 작동합니다.
+
+ForgeBench 개인 프로젝트는 `src/pages/projects/forgebench.astro`에 있습니다. VLA와 같은 상세 페이지 구조로 실행·평가 파이프라인, 여섯 가지 검증 정책, V1 복구 실패, V2 평가셋 구성과 배운 점을 설명합니다. `public/images/forgebench-pipeline.svg`는 공개 아키텍처를 재구성한 도식이며 실행 화면이 아닙니다. 숫자와 판단의 출처는 페이지의 공개 실험 보고서 링크에서 확인할 수 있습니다.
 
 Unreal VLA 개인 프로젝트는 `src/pages/projects/unreal-vla.astro`에 있습니다. 기본·Courtyard·Night의 실제 v12 실행 화면, 평가 조건을 명시한 v10 성능, 일반화 실험과 모델 선택 근거를 담았습니다. 이미지 출처는 `public/images/unreal-vla-provenance.json`, 원본 PNG의 WebP 변환 도구는 `scripts/prepare-vla-images.py`에 기록했습니다.
 
